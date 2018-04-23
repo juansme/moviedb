@@ -1,0 +1,107 @@
+textarea {
+	resize: none;
+}
+table {
+	margin-top: 20px;
+}
+table img {
+	height: 80px;
+}
+.popup {
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	position: fixed;
+	z-index: 1000000;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100vh;
+}
+.popup .panel {
+	max-height: calc(100vh - 80px);
+	overflow: hidden;
+	position: relative;
+	margin-left: 10%;
+	width: 80%
+}
+.popup .panel .panel-heading button {
+	/* background: none;
+	border: none;
+	padding: 0;
+	margin: 0; */
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.popup .panel .panel-body {
+	max-height: calc(100vh - 200px);
+	overflow-y: auto;
+}
+.panel-body .cast-area {
+	min-height: 180px;
+}
+.autocomplete-suggestions {
+	background: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,.05);
+	box-shadow:0 1px 1px rgba(0,0,0,.05);
+	z-index: 1000009 !important;
+}
+.autocomplete-suggestion {
+	cursor: pointer;
+	-webkit-transition: background ease-in-out 0.15s; /* Safari */
+    transition: background ease-in-out 0.15s;
+}
+.autocomplete-selected:hover {
+	background: #eeeeee;
+}
+.autocomplete-suggestions img {
+	height: 80px;
+	margin-right: 10px;
+}
+.cast-area {
+	text-align: center;
+}
+.cast-area .thumbnail:last-of-type {
+	margin-bottom: 20px !important;
+}
+.mb {
+	margin-bottom: 20px;
+}
+.thumbnail.stack {
+	border-radius: 0;
+	border-width: 0 0 1px 0;
+	display: table;
+	margin: 0;
+	position: relative;
+	width: 100%;
+}
+.thumbnail.stack div:first-of-type {
+	width: 1px;
+    white-space: nowrap;
+}
+.thumbnail.stack div {
+	display: table-cell;
+	text-align: left;
+}
+.thumbnail.stack div img {
+	height: 80px;
+}
+.remover {
+	background: #232323;
+	border: 2px solid #FFF;
+	border-radius: 500px;
+	color: #FFF;
+	height: 18px !important;
+	right: 5px;
+	top: 5px;
+	position: absolute;
+	width: 18px !important;
+}
+.remover span {
+	position: relative;
+	margin-left: -5px;
+	top: -2px;
+	font-size: 10px;
+}
